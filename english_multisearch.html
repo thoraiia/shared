@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://fluent-forever.com/wp-content/uploads/2018/05/english_multisearch.html -->
+<html ml-update="aware"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	</head>
+	<body style="background-color: grey;" data-gr-c-s-loaded="true">
+
+<p>What English word would you like to multisearch? Type below, then press enter please.</p>
+<input type="text" id="boxu" autofocus="">
+
+		<script>
+			var windows = [];
+
+document.getElementById("boxu").onkeydown = function(e) {searchy(e)};
+function searchy(e) 
+{
+	if (e.which == 13)
+	{
+		var i = windows.length;
+		while(windows.length){
+    		windows[--i].close()
+			windows.pop();
+		}	
+  	 var q = encodeURIComponent(document.getElementById("boxu").value);
+	 //windows.push(window.open("https://tatoeba.org/eng/sentences/search?from=eng&to=und&query=" + q));
+	 windows.push(window.open("https://translate.google.com.eg/#view=home&op=translate&sl=en&tl=ar&text=" + q));
+	 windows.push(window.open("https://forvo.com/word/"+q+"/#en_usa"));	 
+	 //windows.push(window.open("http://www.wordreference.com/definition/" + q));
+	 windows.push(window.open("https://www.merriam-webster.com/dictionary/" + q));
+	 windows.push(window.open("http://images.google.com/search?q=" + q + "&tbm=isch&sout=1%26hl%3Den%26tbo%3Dd%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1366%26bih%3D643"));
+	// i think google image basic version is distracting & i might remove this
+	// windows.push(window.open("https://www.google.com/search?q="+q+"&tbm=isch&ved=2ahUKEwiOjoqQl__pAhUIrhoKHf0zCSwQ2-cCegQIABAA&oq=soraya&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgjECc6BAgAEENQhyhY9i5guzBoAHAAeACAAbYBiAGsB5IBAzAuNpgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=rfrkXs6DAYjcav3npOAC"));
+	 
+	 document.getElementById("boxu").value = "";		
+	}
+}
+		</script>
+	
+
+
+	<div id="bitlyResolverBox-kb9ku5rp" style="background: rgb(255, 255, 255); color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0); border-radius: 5px; padding: 10px; position: fixed; opacity: 0; transition: all 0.3s ease 0s; box-shadow: rgb(43, 121, 156) 5px 5px 8px; max-width: 400px; overflow-wrap: break-word; z-index: 999999; pointer-events: none; font-weight: lighter;"></div></body></html>
