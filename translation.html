@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://fluent-forever.com/wp-content/uploads/2018/05/english_multisearch.html -->
+<html ml-update="aware"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	</head>
+	<body style="background-color: grey;" data-gr-c-s-loaded="true">
+
+<p>What English word would you like to multisearch? Type below, then press enter please.</p>
+<input type="text" id="boxu" autofocus="">
+
+		<script>
+			var windows = [];
+
+document.getElementById("boxu").onkeydown = function(e) {searchy(e)};
+function searchy(e) 
+{
+	if (e.which == 13)
+	{
+		var i = windows.length;
+		while(windows.length){
+    		windows[--i].close()
+			windows.pop();
+		}
+		
+	//google
+	//twitter
+	//linkedin
+	//google scholar
+	//facebook
+	//youtube
+  	 var q = encodeURIComponent(document.getElementById("boxu").value);
+	 
+
+	 windows.push(window.open("https://translate.google.com.eg/?sl=en&tl=ar&text="+q+"&op=translate"));
+	 
+	 windows.push(window.open("https://context.reverso.net/%D8%A7%D9%84%D8%AA%D8%B1%D8%AC%D9%85%D8%A9/%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/"+q));
+	 
+	 windows.push(window.open("https://www.wordreference.com/enar/"+q));
+	 windows.push(window.open("https://www.almaany.com/ar/dict/ar-en/"+q+"/"));
+	 windows.push(window.open("https://www.almaany.com/ar/dict/ar-ar/"+q+"/"));
+	 
+	 windows.push(window.open("https://www.merriam-webster.com/dictionary/"+q));
+	 
+	 windows.push(window.open("https://en.wikipedia.org/wiki/"+q));
+	 windows.push(window.open("https://www.google.com/search?q="+q+"&sxsrf=AOaemvJ-_-qTLNl2b4pOuiHrPYoUVQLmGQ%3A1631740954673&ei=GmRCYbfIKK2ijLsPisiKwAw&oq=soruaya&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEA0yBAguEA0yBAguEA0yBAgAEA0yBAgAEA0yBAgAEA0yBAguEA0yBAgAEA0yBAgAEA0yBAguEA06BwgAEEcQsAM6EQgAELADEIoDELcDENQDEOUCOhcILhDkAxDYAhDIAxCwAxCLAxCkAxCoAzoECCMQJzoOCC4QgAQQsQMQxwEQowI6CAgAEIAEELEDOg4ILhCABBCxAxDHARDRAzoFCAAQsQM6BQguEJECOg0IABCABBCHAhCxAxAUOgsILhCABBCxAxCDAToFCC4QgAQ6CAguEIAEELEDOgUIABCRAjoFCAAQgAQ6CwguEIAEEMcBEK8BOgQIABAKOgQILhAKOgcILhAKEJMCOgoILhDHARCvARAKOgoILhDHARDRAxAKOgcIABCABBAKOgYIABANEB46CAgAEA0QChAeSgsIkU4SBjQ2LDQ4NEoFCDgSATFKBAhBGABQhiZYxzVgkDhoAXABeACAAaABiAGzB5IBAzAuN5gBAKABAcgBD7gBAsABAQ&sclient=gws-wiz&ved=0ahUKEwi3vd_f9IHzAhUtEWMBHQqkAsgQ4dUDCA4&uact=5"));
+	 windows.push(window.open("https://www.google.com/search?q="+q+"&sxsrf=AOaemvLQHIGMs9xklNdAAnMUn_VE5SuNDA:1631740963609&source=lnms&tbm=isch&sa=X&ved=2ahUKEwic8oDk9IHzAhUNExQKHfidD5QQ_AUoAXoECAEQAw&biw=1707&bih=821"));
+	 
+	 document.getElementById("boxu").value = "";		
+	}
+}
+		</script>
+	
+
+
+	<div id="bitlyResolverBox-kb9ku5rp" style="background: rgb(255, 255, 255); color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0); border-radius: 5px; padding: 10px; position: fixed; opacity: 0; transition: all 0.3s ease 0s; box-shadow: rgb(43, 121, 156) 5px 5px 8px; max-width: 400px; overflow-wrap: break-word; z-index: 999999; pointer-events: none; font-weight: lighter;"></div></body></html>
